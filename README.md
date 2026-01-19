@@ -26,16 +26,16 @@ No external dependencies required (Static linking).
 
 Bash
 
-git clone https://github.com/yourusername/Win32-Streamer.git
+git clone https://github.com/Slashin3/remote-desktop.git
 2. Compile (MinGW/G++)
 
 Bash
 
 # Compile the Streamer (Host)
-g++ streamer.cpp -o streamer.exe -lgdi32 -lws2_32 -static
+g++ streamer_remote.cpp -o streamer_remote.exe -lgdi32 -lws2_32 -static
 
 # Compile the Player (Client)
-g++ player.cpp -o player.exe -lgdi32 -lws2_32 -static
+g++ player_remote.cpp -o player_remote.exe -lgdi32 -lws2_32 -static
 🚧 Current Limitations
 Uses CPU-bound GDI capture (Planning migration to DirectX/DXGI).
 
