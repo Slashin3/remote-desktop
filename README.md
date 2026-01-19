@@ -31,11 +31,22 @@ git clone https://github.com/Slashin3/remote-desktop.git
 
 Bash
 
+### ⚙️ Configuration
+Before compiling, you need to set the IP address of the computer running the **Streamer**.
+
+1. Open `player_remote.cpp` and `streamer_remote.cpp`.
+2. Find the line:
+   ```cpp
+   #define TARGET_IP =  "127.0.0.1" // Change this to your ip.
+
 # Compile the Streamer (Host)
 g++ streamer_remote.cpp -o streamer_remote.exe -lgdi32 -lws2_32 -static
 
 # Compile the Player (Client)
 g++ player_remote.cpp -o player_remote.exe -lgdi32 -lws2_32 -static
+
+
+
 🚧 Current Limitations
 Uses CPU-bound GDI capture (Planning migration to DirectX/DXGI).
 
