@@ -1,0 +1,9 @@
+# Ignore compiled binaries
+*.exe
+*.o
+*.obj
+*.dll
+
+# Ignore editor settings
+.vscode/
+*.swp
