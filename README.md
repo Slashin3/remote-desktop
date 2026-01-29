@@ -27,6 +27,7 @@ No external dependencies required (Static linking).
 Bash
 
 git clone https://github.com/Slashin3/remote-desktop.git
+
 2. Compile (MinGW/G++)
 
 Bash
